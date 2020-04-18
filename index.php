@@ -15,7 +15,7 @@ header("Cache-Control: max-age=31536");
 date_default_timezone_set('America/Detroit');
 require_once 'vendor/composer/autoload_classmap.php';
 
-//$db = new db('adoms/config/config.json');
+$db = new db('adoms/config/config.json');
 $bool_user = false;
 
 /// Collect information to see if a visitor is new or not
