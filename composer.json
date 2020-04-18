@@ -1,0 +1,17 @@
+{
+    "name": "swatchphp/adoms",
+    "description": "OOP toolset",
+    "type": "library",
+    "license": "mit",
+    "version": "2.0",
+    "authors": [
+        {
+            "name": "Anthony Pulse, Jr.",
+            "email": "48605836+saasey@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "classmap": ["Adoms"]
+    }
+}

@@ -1,0 +1,4 @@
+
+.column-left{ display: inline-block; width: 33%; }
+.column-right{ text-align: right;  display: inline-block; width: 33%; }
+.column-center{ text-align:center; display: inline-block; width:33%; vertical-align:center; }
