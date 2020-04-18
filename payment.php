@@ -1,6 +1,6 @@
 <?php
 
-  namespace adoms\oauth2;
+  namespace Adoms\oauth2;
 
   $db = new $db();
   $res = $db->read(array("users" => ['site_id', 'grad_fee', 'month', 'day', 'fee', 'views_month', 'views_total' ]), "`site_id` = '" . $_COOKIE['PHPSESSID'] . "'");

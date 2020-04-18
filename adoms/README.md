@@ -1,8 +1,8 @@
-# adoms
+# Adoms
 PHP Library and MVC
 
 
 To use the chat aspect, just include:
 
-adoms\src\chat\outchat.php
+Adoms\src\chat\outchat.php
 

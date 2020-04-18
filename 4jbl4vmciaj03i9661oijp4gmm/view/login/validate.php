@@ -1,5 +1,5 @@
 <?php
-namespace adoms\oauth2;
+namespace Adoms\oauth2;
 
 require_once ('../vendor/composer/autoload_classmap.php');
 ?>
@@ -8,7 +8,7 @@ require_once ('../vendor/composer/autoload_classmap.php');
 
 $crud = new OAuth2Owner();
 
-$record = $crud->login("../adoms/config/config.json", ["table" => "users", "username" => $_COOKIE['username'], "password" => $_POST['password']]);
+$record = $crud->login("../Adoms/config/config.json", ["table" => "users", "username" => $_COOKIE['username'], "password" => $_POST['password']]);
 
 if ($record->num_rows != 1) {
     session_destroy();
@@ -20,7 +20,7 @@ if ($record->num_rows != 1) {
 }
 else {
     $user = $_COOKIE['username'];
-    $db = new db('../adoms/config/config.json');
+    $db = new db('../Adoms/config/config.json');
     $receive = $db->read(["users" => ["site_id"], "visitors" => []],"`users`.`site_id` = `visitors`.`site_id` AND `users`.`username` = '$user'");
     setcookie("COOKIE",$receive,time() + (60 * 60 * 24 * 60));
 }

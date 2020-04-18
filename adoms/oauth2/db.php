@@ -1,23 +1,23 @@
 <?php
-namespace Adoms\oauth2;
+namespace Adoms\src\oauth2;
 
-//require_once('../vendor/composer/autoload_classmap.php');
-if (!file_exists('vendor/composer/autoload_classmap.php')) {
-    if (!file_exists('../vendor/composer/autoload_classmap.php')) {
-        if (!file_exists('../../vendor/composer/autoload_classmap.php')) {
-            if (file_exists('../../../vendor/composer/autoload_classmap.php')) {
-                require_once('../../../vendor/composer/autoload_classmap.php');
+//require_once('../vendor/autoload.php');
+if (!file_exists('vendor/autoload.php')) {
+    if (!file_exists('../vendor/autoload.php')) {
+        if (!file_exists('../../vendor/autoload.php')) {
+            if (file_exists('../../../vendor/autoload.php')) {
+                require_once('../../../vendor/autoload.php');
             }
         }
         else {
-            require_once('../../vendor/composer/autoload_classmap.php');
+            require_once('../../vendor/autoload.php');
         }
     }
     else
-        require_once('../vendor/composer/autoload_classmap.php');
+        require_once('../vendor/autoload.php');
 }
 else
-    require_once('vendor/composer/autoload_classmap.php');
+    require_once('vendor/autoload.php');
 
 class db
 {

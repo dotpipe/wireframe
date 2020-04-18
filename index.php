@@ -1,8 +1,6 @@
 <?php
 
-namespace adoms\src\oauth2;
-
-use adoms\src\wireframe;
+namespace Adoms\src\oauth2;
 
 session_cache_limiter('');
 
@@ -13,9 +11,9 @@ if (!isset($_SESSION))
 header("Cache-Control: max-age=31536");
 
 date_default_timezone_set('America/Detroit');
-require_once 'vendor/composer/autoload_classmap.php';
+require_once 'vendor/autoload.php';
 
-$db = new db('adoms/config/config.json');
+$db = new db('Adoms/config/config.json');
 $bool_user = false;
 
 /// Collect information to see if a visitor is new or not
@@ -92,7 +90,7 @@ print_r($_COOKIE);
         /* $db->create(["realm" => $_COOKIE['PHPSESSID'], "username" => $_COOKIE['username'], "password" => $_COOKIE['password'], "request" => "NEWUSER"],"oauth2");
         $rehash = $db->hashPassword($_COOKIE['password']); */
         $oauth = new OAuth2Owner();
-        $login = $oauth2->login("../adoms/config/config.json", array("table" => "oauth2", "password" => $_COOKIE['password'], "username" => $_COOKIE['username'], "realm" => $_COOKIE['PHPSESSID']),0);
+        $login = $oauth2->login("../Adoms/config/config.json", array("table" => "oauth2", "password" => $_COOKIE['password'], "username" => $_COOKIE['username'], "realm" => $_COOKIE['PHPSESSID']),0);
         $pass = $_COOKIE['password'];
         $oauth2->hashPassword($pass);
 
@@ -129,7 +127,7 @@ print_r($_COOKIE);
     /// LOGIN FOR THE USERS WHO ARE ALREADY REGISTERED
     if (!isset($_COOKIE['new']) && isset($_COOKIE['username']) && isset($_COOKIE['password'])){
         $oauth = new OAuth2Owner();
-        $login = $oauth2->login("../adoms/config/config.json", array("table" => "oauth2", "password" => $_COOKIE['password'], "username" => $_COOKIE['username'], "realm" => $_COOKIE['PHPSESSID']),0);
+        $login = $oauth2->login("../Adoms/config/config.json", array("table" => "oauth2", "password" => $_COOKIE['password'], "username" => $_COOKIE['username'], "realm" => $_COOKIE['PHPSESSID']),0);
         $pass = $_COOKIE['password'];
         $oauth2->hashPassword($pass);
         $returned = $db->read(array("users" => ['site_id']),'`username` = "' . $_COOKIE['username'] . '" AND `password` = "' . $pass . '"');

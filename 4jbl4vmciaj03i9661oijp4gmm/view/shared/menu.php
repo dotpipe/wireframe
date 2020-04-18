@@ -1,7 +1,7 @@
 <html>
 <head>
 
-<script src="../adoms/src/routes/pipes.js"></script>
+<script src="../Adoms/src/routes/pipes.js"></script>
 <style>
 a {
     opacity:0;

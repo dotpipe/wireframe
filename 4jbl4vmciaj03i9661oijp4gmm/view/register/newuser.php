@@ -1,12 +1,12 @@
 <?php
-    namespace adoms\oauth2;
+    namespace Adoms\oauth2;
 
     include_once("../../../vendor/composer/autoload_classmap.php");
 
     if (!isset($_SESSION))
         session_start();
 
-    $db = new db("../../../adoms/config/config.json");
+    $db = new db("../../../Adoms/config/config.json");
     
     $result = $db->read(["users" => ["username", "site_id"]], "`username` = \"" . $_POST['username'] . "\"");
 
@@ -40,7 +40,7 @@
             "deal" => NULL,
             "views_total" => 0
         );
-        $UserController->newUser("../../../adoms/config/config.json", $vals, "users");
+        $UserController->newUser("../../../Adoms/config/config.json", $vals, "users");
         $vals_new_oauth = [
             "id" => NULL,
             "password" => $pass,
@@ -50,7 +50,7 @@
             "request" => "NEWUSER",
             "expiry" => 0
         ];
-        $UserController->newUser("../../../adoms/config/config.json", $vals, "users");
+        $UserController->newUser("../../../Adoms/config/config.json", $vals, "users");
         
         //$db->create($vals,"users");
         $returned = $db->read(array("users" => ['site_id']),'`username` = "' . $_POST['username'] . '" AND `password` = "' . $rehash . '"');

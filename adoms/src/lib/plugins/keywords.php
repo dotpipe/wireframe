@@ -1,6 +1,6 @@
 <?php declare (strict_types = 1);
 
-namespace adoms\src\lib\plugins\KeywordFactory;
+namespace Adoms\src\lib\plugins\KeywordFactory;
 
 class KeywordFactory {
 

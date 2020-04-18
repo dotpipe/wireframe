@@ -1,6 +1,6 @@
 <?php
-namespace adoms\oauth2;
-use adoms\oauth2;
+namespace Adoms\oauth2;
+use Adoms\oauth2;
 
 require_once("../vendor/composer/autoload_classmap.php");
 
@@ -40,7 +40,7 @@ td > h3 {
 }
 </style>
 
-<script src="../adoms/src/routes/pipes.js"></script>
+<script src="../Adoms/src/routes/pipes.js"></script>
 
 <script data-ad-client="ca-pub-1005898633128967" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 

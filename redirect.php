@@ -1,7 +1,7 @@
 <?php
 
-namespace adoms\wireframe;
-use adoms\oauth2;
+namespace Adoms\wireframe;
+use Adoms\oauth2;
 if (!isset($_SESSION))
     session_start();
 

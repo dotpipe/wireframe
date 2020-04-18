@@ -1,6 +1,6 @@
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>1
-<script src="../adoms/src/routes/pipes.js"></script>
+<script src="../Adoms/src/routes/pipes.js"></script>
 
 <br><br><br><br><br><br><br><br><br><br>
 <form style="opacity:1;zoom:1.5;" method="POST" action="view/register/newuser.php">

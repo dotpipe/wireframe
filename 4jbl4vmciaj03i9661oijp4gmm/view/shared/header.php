@@ -17,7 +17,7 @@ if (!isset($_SESSION)) {
 .lnk5{ float:right; display: inline-block; width: 10%; }
 
 </style>
-<script src="<?php echo "../adoms/src/routes/pipes.js"; ?>"></script>
+<script src="<?php echo "../Adoms/src/routes/pipes.js"; ?>"></script>
 </head>
 <body style="horizontal-align:center;border-spacing:10px;margin-left:0px;margin-right:0px;margin-top:-5px;margin-bottom:0px;">
 

@@ -1,6 +1,6 @@
 <?php
 namespace vendor\braintree\braintree_php\lib\Braintree;
-use adoms\oauth2;
+use Adoms\oauth2;
 require_once 'vendor/composer/autoload_classmap.php';
 $gateway = new Braintree_Gateway([
   'environment' => 'sandbox',

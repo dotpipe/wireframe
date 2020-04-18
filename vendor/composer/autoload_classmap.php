@@ -6,9 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Adoms\\oauth2\\OAuth2Owner' => $baseDir . '/Adoms/oauth2/oauth2owner.php',
-    'Adoms\\oauth2\\db' => $baseDir . '/Adoms/oauth2/db.php',
-    'Adoms\\oauth2\\userController' => $baseDir . '/Adoms/oauth2/usercontroller.php',
+    'Adoms\\oauth2\\OAuth2Owner' => $baseDir . '/Adoms/src/oauth2/oauth2owner.php',
+    'Adoms\\oauth2\\db' => $baseDir . '/Adoms/src/oauth2/db.php',
+    'Adoms\\oauth2\\userController' => $baseDir . '/Adoms/src/oauth2/usercontroller.php',
     'Adoms\\src\\lib\\Classes' => $baseDir . '/Adoms/src/lib/classes.php',
     'Adoms\\src\\lib\\Common' => $baseDir . '/Adoms/src/lib/common.php',
     'Adoms\\src\\lib\\Container' => $baseDir . '/Adoms/src/lib/container.php',
